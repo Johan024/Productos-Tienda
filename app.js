@@ -121,24 +121,6 @@ const main = async() =>{
         }
     }
 
-    const pausa = () => {
-        
-    }
-
-    let option = '';
-
-    do{
-        do {
-            option = await main();
-        } while(!(option >=0 && option<=6))
-
-        if (option !== '0'){
-            console.log(`\nSe ejecuta el proceso ${option}`);
-            await pausa();
-        }
-    } while(option !== '0');
-
-
     let productosTienda = new ProductosTienda;
 
     productosTienda.cargaArchivoProductos();
